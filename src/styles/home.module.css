@@ -1,0 +1,40 @@
+.layout {
+    display: grid;
+    grid-template-columns: 200px 800px;
+    justify-content: center;
+}
+
+
+.banner {
+    text-align: center;
+}
+
+.banner>h2 {
+    font-size: 3em;
+    margin-top: 50px;
+}
+
+.banner>h3 {
+    font-size: 1.2em;
+    font-weight: 400;
+    margin: 10px 15px 30px;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 80px;
+    margin: 80px 20px;
+}
+
+.projects h3 {
+    text-align: center;
+    margin: 20px auto 0px;
+    font-weight: 500;
+}
+
+.projects p {
+    color: #ccc;
+    margin: 4px;
+
+}
