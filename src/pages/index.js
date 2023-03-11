@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import Layout from "../components/Layout"
 import * as styles from "../styles/home.module.css"
 import CourseSection from "../components/CourseSection"
+import Sidebar from "../components/Sidebar"
 
 const Projects = () => {
   const [basestatus, setBaseStatus] = useState(0)
@@ -29,6 +30,9 @@ const Projects = () => {
           students can focus on what is most relevant to them.
         </h3>
         <div className={styles.layout}>
+          <div className={styles.sidebar}>
+            <Sidebar stat_setter={statusSetter} vid_setter={vidSetter} />
+          </div>
           <div className={styles.coursesection}>
             <CourseSection curr_status={basestatus} curr_vid={basevid} />
           </div>
